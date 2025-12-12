@@ -10,11 +10,11 @@
     },
     {
       "id": "2",
-      "name": "Carlos Rodríguez Martín",
-      "email": "carlos.rodriguez@email.com",
-      "enrollmentDate": "2024-10-01",
-      "active": true,
-      "level": "beginner"
+      "name": "Carlos Editado",
+      "email": "carlos-editado@example.com",
+      "enrollmentDate": "2024-11-05",
+      "active": false,
+      "level": "advanced"
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
       "name": "Laura Martínez Ruiz",
       "email": "laura.martinez@email.com",
       "enrollmentDate": "2024-09-25",
-      "active": true,
+      "active": false,
       "level": "beginner"
     },
     {
@@ -49,12 +49,12 @@
       "level": "advanced"
     },
     {
-      "id": "7",
-      "name": "Elena Díaz Moreno",
-      "email": "elena.diaz@email.com",
-      "enrollmentDate": "2024-09-05",
-      "active": false,
-      "level": "intermediate"
+      "id": "8",
+      "name": "Nuevo Estudiante",
+      "email": "nuevo@example.com",
+      "enrollmentDate": "2025-01-01",
+      "active": true,
+      "level": "beginner"
     }
   ],
   "courses": [
