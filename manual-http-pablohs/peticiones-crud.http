@@ -1,0 +1,61 @@
+###     VARIABLES GLOBALES
+@baseUrl = http://localhost
+@port = 4000
+@apiUrl = {{baseUrl}}:{{port}}
+@contentType = application/json
+### Guardamos el ID para pruebas CRUD
+@idPrueba = 15
+
+###     CREATE (POST)
+### Agregar un nuevo estudiante
+POST {{apiUrl}}/students
+Content-Type: {{contentType}}
+
+{
+    "id": "{{idPrueba}}",
+    "name": "Alumno REST",
+    "email": "alumno.rest@example.com",
+    "enrollmentDate": "2025-10-01",
+    "active": true,
+    "level": "intermediate"
+}
+
+###     READ (GET)
+### Obtener la lista completa de estudiantes
+GET {{apiUrl}}/students
+
+### Obtener un estudiante por ID (ejemplo: id = 7)
+GET {{apiUrl}}/students/7
+
+### Filtrar estudiantes activos
+GET {{apiUrl}}/students?active=true
+
+### Filtrar estudiantes por nivel
+GET {{apiUrl}}/students?level=advanced
+
+###     UPDATE (PUT)
+### Modificar todos los datos de un estudiante
+PUT {{apiUrl}}/students/{{idPrueba}}
+Content-Type: {{contentType}}
+
+{
+    "id": "{{idPrueba}}",
+    "name": "Manuel REST Actualizado",
+    "email": "manuel.rest@example.com",
+    "enrollmentDate": "2020-11-22",
+    "active": false,
+    "level": "advanced"
+}
+
+###     PATCH (PARCIAL)
+### Modificar solo un campo del estudiante
+PATCH {{apiUrl}}/students/{{idPrueba}}
+Content-Type: {{contentType}}
+
+{
+    "active": false
+}
+
+###     DELETE
+### Eliminar estudiante por ID (ejemplo: id = 15)
+DELETE {{apiUrl}}/students
