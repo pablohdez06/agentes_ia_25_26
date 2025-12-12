@@ -55,6 +55,17 @@
       "enrollmentDate": "2025-01-01",
       "active": true,
       "level": "beginner"
+    },
+    {
+      "id": "1c43"
+    },
+    {
+      "id": "15",
+      "name": "Manuel REST Actualizado",
+      "email": "manuel.rest@example.com",
+      "enrollmentDate": "2020-11-22",
+      "active": false,
+      "level": "advanced"
     }
   ],
   "courses": [

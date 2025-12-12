@@ -273,7 +273,7 @@ Obtiene la informacion de un estudiante especifico segun su ID.
 Actualiza completamente la informacion de un estudiante existente.
 
 **Metodo:** PUT  
-**URL:** `http://localhost:4000/students/20`  
+**URL:** `http://localhost:4000/students/10`  
 
 **Body (JSON):**
 ```json
